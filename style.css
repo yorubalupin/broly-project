@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36, 36, 36);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    font-size: 24px;
+}
+
+img { 
+    width: 60px;
+    height: auto;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+nav, .li {
+    display: inline-block;
+}
+
+a, li {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.909);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: rgb(175, 249, 26);
+    transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+button {
+    background-color: rgba(255, 0, 0, 0.909);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+.sign-up-button {
+    padding: 15px 30px;
+    outline: none;
+
+}
+.left-body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30%;
+}
+.left-body {
+    font-size: 30px;
+    display: flex;
+    color: rgb(175, 249, 26);
+    
+}
+.body-2 {
+    font-size: 18px;
+    color: rgb(215, 245, 22);
+    font-weight: 400;  
+}
+.broly-img {
+    width: 500px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    height:calc(100vh - 100px);
+    align-items: center; 
+    justify-content: center;
+}
+
